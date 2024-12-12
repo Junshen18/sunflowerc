@@ -21,7 +21,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed w-full z-50">
+    <nav className="sticky top-0 w-full z-50 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo */}
@@ -77,7 +77,9 @@ export default function Navbar() {
             >
               LOGIN
             </Link>
-            <FontAwesomeIcon icon={faCartShopping} />
+            <div className="flex items-center cursor-pointer">
+                <FontAwesomeIcon icon={faCartShopping} />
+            </div>
           </div>
 
           {/* Mobile menu button */}

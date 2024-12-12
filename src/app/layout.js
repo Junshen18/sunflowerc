@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} antialiased text-black`}
       >
         <Navbar />
-        <main className="pt-16">
+        <main>
           {children}
         </main>
       </body>
