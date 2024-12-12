@@ -12,8 +12,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Hello Hui Li 有黑眼圈",
-  description: "Hello Hui Li 有黑眼圈",
+  title: "SunflowerC",
+  description:
+    "An e-commerce platform specializing in fashion and accessories, showcases a variety of modern and traditional clothing, including Chinese-inspired designs like Qipao dresses.",
+  icons: {
+    icon: [
+      { url: '/SunflowerC1.png', sizes: '32x32' },
+      { url: '/SunflowerC2.png', sizes: '192x192' },
+      { url: '/SunflowerC3.png', sizes: '512x512' },
+    ],
+    apple: { url: '/SunflowerC1.png', sizes: '180x180' }
+  }
 };
 
 export default function RootLayout({ children }) {
