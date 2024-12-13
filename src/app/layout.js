@@ -30,11 +30,11 @@ export const metadata = {
     "An e-commerce platform specializing in fashion and accessories, showcases a variety of modern and traditional clothing, including Chinese-inspired designs like Qipao dresses.",
   icons: {
     icon: [
-      { url: '/SunflowerC1.png', sizes: '32x32' },
-      { url: '/SunflowerC2.png', sizes: '192x192' },
-      { url: '/SunflowerC3.png', sizes: '512x512' },
+      { url: '/SunflowerC.png', sizes: '32x32' },
+      { url: '/SunflowerC.png', sizes: '192x192' },
+      { url: '/SunflowerC.png', sizes: '512x512' },
     ],
-    apple: { url: '/SunflowerC1.png', sizes: '180x180' }
+    apple: { url: '/SunflowerC.png', sizes: '180x180' }
   }
 };
 
@@ -42,10 +42,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} antialiased text-black`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} antialiased text-black min-h-screen`}
       >
         <Navbar />
-        <main>
+        <main className="h-[calc(100vh-64px)]">
           {children}
         </main>
       </body>
